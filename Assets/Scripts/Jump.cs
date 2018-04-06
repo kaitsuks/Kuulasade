@@ -22,10 +22,25 @@ public class Jump : Physics2DObject
 
 	private bool canJump = true;
 
-	// Read the input from the player
-	void Update()
+    Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
+
+
+    // Read the input from the player
+    void Update()
 	{
-		if(canJump
+        if (Input.GetKeyDown("space"))
+        //välilyönti - tai muu näppäin
+        {
+            animator.SetTrigger("Trigger1");
+            Debug.Log("I am alive!");
+        }
+
+        if (canJump
 			&& Input.GetKeyDown(key))
 		{
 			// Apply an instantaneous upwards force
@@ -40,6 +55,12 @@ public class Jump : Physics2DObject
 			&& collisionData.gameObject.CompareTag(groundTag))
 		{
 			canJump = true;
-		}
+            animator.SetTrigger("Trigger2");
+        }
 	}
+
+    private void LateUpdate()
+    {
+        
+    }
 }
