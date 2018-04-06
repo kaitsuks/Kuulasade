@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 522208961}
   - component: {fileID: 522208960}
   - component: {fileID: 522208964}
+  - component: {fileID: 522208965}
   m_Layer: 0
   m_Name: ogre
   m_TagString: Untagged
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522208959}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ee22309661aade4b8cc757a6f04a07d, type: 3}
   m_Name: 
@@ -251,57 +252,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
---- !u!1 &1533573422
-GameObject:
+--- !u!114 &522208965
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1533573424}
-  - component: {fileID: 1533573423}
-  m_Layer: 0
-  m_Name: Sahalaita
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!68 &1533573423
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1533573422}
+  m_GameObject: {fileID: 522208959}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -7.367612, y: -0.15608208}
-  - {x: -1.1330271, y: 1.731138}
-  - {x: 1.3378466, y: 2.185149}
-  - {x: 3.8000216, y: -2.8094778}
-  - {x: 4.2459702, y: 0.42365113}
-  - {x: 6.9718304, y: 0.77961576}
-  - {x: 7.6797757, y: -2.2074468}
---- !u!4 &1533573424
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1533573422}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a381fe3e0fa03eb4e98f8e005d980294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2D: {fileID: 0}
+  speed: 1
+  directionChangeInterval: 3
+  keepNearStartingPoint: 1
+  orientToDirection: 0
+  lookAxis: 0
 --- !u!1 &1590350437
 GameObject:
   m_ObjectHideFlags: 0
