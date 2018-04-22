@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 58073286035006940}
   - component: {fileID: 114273426037822460}
   - component: {fileID: 114899242300488742}
+  - component: {fileID: 114583710206196240}
   m_Layer: 0
   m_Name: Cannonballs
   m_TagString: Enemy
@@ -90,7 +91,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8862ea7b10c84421c9485c36f04335a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mcb: {fileID: 0}
   timeToDestruction: 2
+--- !u!114 &114583710206196240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982285906256896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423bcf568b1d8e04dab254dca0174d37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPlayer: 0
+  m_Border: {fileID: 0}
+  m_ExplodedFloor: {fileID: 0}
+  m_Explosion: {fileID: 1134481946190490, guid: 0145b74b86a23dd4b9db08b40ab603b7,
+    type: 2}
+  m_Cannonballs: {fileID: 1734045584369872, guid: 286e4f99dd3b95c42b1744ba6dbf3bae,
+    type: 2}
+  playerTransform: {fileID: 0}
+  CannonballsTransform: {fileID: 0}
+  CannonballsPosition: {x: 0, y: 0, z: 0}
+  digForeground: 0
+  digKivet: 1
+  digSoilground: 0
+  buttonPressed: 0
+  gridPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114899242300488742
 MonoBehaviour:
   m_ObjectHideFlags: 1
