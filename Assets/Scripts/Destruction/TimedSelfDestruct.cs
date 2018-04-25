@@ -4,7 +4,7 @@ using System.Collections;
 [AddComponentMenu("Playground/Destruction/Timed Self-Destruct")]
 public class TimedSelfDestruct : MonoBehaviour
 {
-    public MouseClickBomb mcb;
+    
 
 	// After this time, the object will be destroyed
 	public float timeToDestruction;
@@ -12,7 +12,7 @@ public class TimedSelfDestruct : MonoBehaviour
 
 	void Start ()
 	{
-        mcb = new MouseClickBomb();
+        
         Invoke("DestroyMe", timeToDestruction);
 	}
 
@@ -20,7 +20,7 @@ public class TimedSelfDestruct : MonoBehaviour
 	// This function will destroy this object :(
 	void DestroyMe()
 	{
-        mcb.buttonPressed = true;
+        
         Destroy(gameObject);
 
 		// Bye bye!
