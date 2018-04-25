@@ -20,7 +20,7 @@ public class TimedSelfDestruct : MonoBehaviour
 	// This function will destroy this object :(
 	void DestroyMe()
 	{
-        
+        gameObject.SendMessage("Explodeit", null);
         Destroy(gameObject);
 
 		// Bye bye!

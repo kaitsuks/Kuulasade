@@ -21,6 +21,7 @@ public class ExplodeTile : MonoBehaviour
     public Transform playerTransform;
     public Transform CannonballsTransform;
     public Vector3 CannonballsPosition;
+    public Vector3Int gridPos2;
 
     private Grid m_Grid;
     private Tilemap m_ForeGround;
@@ -34,11 +35,14 @@ public class ExplodeTile : MonoBehaviour
     public bool exptrigger = false;
 
    public Vector3Int gridPos;
+    Animator animator;
+
+   
 
     // Use this for initialization
     void Start()
     {
-       
+        animator = GetComponentInChildren<Animator>(); // ei ehkä tarvita
         m_Grid = GameObject.Find("Grid1").GetComponent<Grid>();
         m_Info = m_Grid.GetComponent<GridInformation>();
         m_Kivet = GameObject.Find("Kivet").GetComponent<Tilemap>();
@@ -86,7 +90,7 @@ public class ExplodeTile : MonoBehaviour
             //Vector3 world2 = Camera.main.ScreenToWorldPoint(CannonballsPosition);
             Vector3 world2 = CannonballsPosition;
             
-            Vector3Int gridPos2 = m_Grid.WorldToCell(world2);
+            gridPos2 = m_Grid.WorldToCell(world2);
             //System.Diagnostics.Debug.WriteLine("Bridge "); EI TOIMI EIKÄ SEURAAVA
             //Assert.AreEqual("Whatever " + Input.mousePosition.x.ToString(), Input.mousePosition.x.ToString(), " OMG! Whatever is not equal to numHerb!");
             //ExplodeCell(gridPos);
@@ -95,15 +99,20 @@ public class ExplodeTile : MonoBehaviour
             //UnityEngine.Debug.Log("world2.x " + world2.x.ToString()); //TÄMÄ TOIMII
             //UnityEngine.Debug.Log("gridPos2.x " + gridPos2.x.ToString());
 
-            if (true) {
-                exptrigger = false;
-                ExplodeCell(gridPos2);
+           // if (true) {
+               // exptrigger = false;
+               // ExplodeCell(gridPos2);
             }
         }
 
        // System.Diagnostics.Debug.WriteLine("Bridge ");
         
-    }
+    
+public void Explodeit()
+{
+    ExplodeCell(gridPos2);
+
+}
 
     public void ExplodeCell(Vector3Int position)
     {

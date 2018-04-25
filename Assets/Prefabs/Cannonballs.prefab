@@ -24,7 +24,8 @@ GameObject:
   - component: {fileID: 58073286035006940}
   - component: {fileID: 114273426037822460}
   - component: {fileID: 114899242300488742}
-  - component: {fileID: 114583710206196240}
+  - component: {fileID: 114359885095865366}
+  - component: {fileID: 95863756648916202}
   m_Layer: 0
   m_Name: Cannonballs
   m_TagString: Enemy
@@ -73,13 +74,30 @@ CircleCollider2D:
   m_GameObject: {fileID: 1982285906256896}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 40a7146b1a2ec49779a9976ba61b8bf0, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!95 &95863756648916202
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982285906256896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eef98e9c024b29146911c39926b51ecf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114273426037822460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,9 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8862ea7b10c84421c9485c36f04335a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mcb: {fileID: 0}
   timeToDestruction: 2
---- !u!114 &114583710206196240
+--- !u!114 &114359885095865366
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -101,23 +118,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1982285906256896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423bcf568b1d8e04dab254dca0174d37, type: 3}
+  m_Script: {fileID: 11500000, guid: f1bd064368198564ba4b6b6e02704e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlayer: 0
   m_Border: {fileID: 0}
   m_ExplodedFloor: {fileID: 0}
-  m_Explosion: {fileID: 1134481946190490, guid: 0145b74b86a23dd4b9db08b40ab603b7,
-    type: 2}
-  m_Cannonballs: {fileID: 1734045584369872, guid: 286e4f99dd3b95c42b1744ba6dbf3bae,
-    type: 2}
+  m_Explosion: {fileID: 0}
+  m_Cannonballs: {fileID: 0}
   playerTransform: {fileID: 0}
   CannonballsTransform: {fileID: 0}
   CannonballsPosition: {x: 0, y: 0, z: 0}
-  digForeground: 0
-  digKivet: 1
-  digSoilground: 0
+  digKivet: 0
   buttonPressed: 0
+  exptrigger: 0
   gridPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114899242300488742
 MonoBehaviour:
