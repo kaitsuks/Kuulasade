@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114899242300488742}
   - component: {fileID: 114359885095865366}
   - component: {fileID: 95863756648916202}
+  - component: {fileID: 114760433120062206}
   m_Layer: 0
   m_Name: Cannonballs
   m_TagString: Enemy
@@ -129,10 +130,23 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   CannonballsTransform: {fileID: 0}
   CannonballsPosition: {x: 0, y: 0, z: 0}
+  gridPos2: {x: 0, y: 0, z: 0}
   digKivet: 0
   buttonPressed: 0
-  exptrigger: 0
   gridPos: {x: 0, y: 0, z: 0}
+--- !u!114 &114760433120062206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982285906256896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561d63d49cc663e439e20427621f964a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1385066722845798, guid: f6d9b951ef2b3f040b9f8ae54022f55a,
+    type: 2}
 --- !u!114 &114899242300488742
 MonoBehaviour:
   m_ObjectHideFlags: 1

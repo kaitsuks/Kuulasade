@@ -32,17 +32,17 @@ public class ExplodeTile : MonoBehaviour
    
    public bool digKivet = false;
    public bool buttonPressed = false;
-    public bool exptrigger = false;
+   // public bool exptrigger = false;
 
    public Vector3Int gridPos;
-    Animator animator;
+  //  Animator animator;
 
    
 
     // Use this for initialization
     void Start()
     {
-        animator = GetComponentInChildren<Animator>(); // ei ehkä tarvita
+        // animator = GetComponentInChildren<Animator>(); // ei ehkä tarvita
         m_Grid = GameObject.Find("Grid1").GetComponent<Grid>();
         m_Info = m_Grid.GetComponent<GridInformation>();
         m_Kivet = GameObject.Find("Kivet").GetComponent<Tilemap>();
@@ -123,6 +123,10 @@ public void Explodeit()
             
             ExplodeKivet(position);
             Explode(position);
+            //Vector2 positionv2 
+            //gameObject.SendMessage("CreateNewObject", position);
+            SendMessage("GetObject", position);
+            //gameObject.SendMessage("CreateNewObject", null);
             return;
         }
 }
