@@ -23,8 +23,8 @@ public class ObjectCreator : MonoBehaviour
     void Start ()
 	{
         //boxCollider2D = GetComponent<BoxCollider2D>();
-        Debug.Log("Rutiini käynnistetty ");
-        StartCoroutine(CreateObjects());
+        //Debug.Log("Rutiini käynnistetty ");
+        //StartCoroutine(CreateObjects());
 	}
 
     public void GetObject(Vector3Int position)
@@ -34,7 +34,7 @@ public class ObjectCreator : MonoBehaviour
         //Vector2 v2 = (Vector3) position;
         b = true;
         StartCoroutine(CreateObjects());
-        Debug.Log("b = true ");
+        //Debug.Log("b = true ");
     }
 	
 	// This will spawn an object, and then wait some time, then spawn another...
@@ -54,7 +54,7 @@ public class ObjectCreator : MonoBehaviour
             //newObject.transform.position = new Vector2(randomX + this.transform.position.x, randomY + this.transform.position.y);
             newObject.transform.position = positionv2; // new Vector2
             b = false;
-            Debug.Log("Tasoluotu");
+            //Debug.Log("Tasoluotu");
             // Wait for some time before spawning another object
             //yield return new WaitForSeconds(spawnInterval);
             yield return newObject;
