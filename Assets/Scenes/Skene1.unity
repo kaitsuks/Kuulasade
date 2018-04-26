@@ -2949,7 +2949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody2D: {fileID: 0}
   typeOfControl: 0
-  speed: 1
+  speed: 2
   movementType: 1
   orientToDirection: 0
   lookAxis: 0
@@ -3085,7 +3085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody2D: {fileID: 0}
   key: 32
-  jumpStrength: 3
+  jumpStrength: 6
   groundTag: Ground
   checkGround: 1
 --- !u!114 &522208967
@@ -3502,6 +3502,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 917793a4e40c8784cb3b7ce706b6778e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1109782015
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.0947156
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.599616
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.11581734
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506838897492210, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1813222161843652, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+      propertyPath: m_Name
+      value: Rajahdys
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 04b244dd4fd823540a7a8c0de5394a18, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1150775664
 Prefab:
   m_ObjectHideFlags: 0
@@ -3672,8 +3718,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5de385f6f4e31c442ba2e49b0330588f, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0.282
   m_Pitch: 1
   Loop: 1
   Mute: 0

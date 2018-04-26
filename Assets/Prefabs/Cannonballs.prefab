@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 95863756648916202}
   - component: {fileID: 114760433120062206}
   - component: {fileID: 82815610913002974}
-  - component: {fileID: 114092616148905712}
+  - component: {fileID: 114899837807684718}
   m_Layer: 0
   m_Name: Cannonballs
   m_TagString: Enemy
@@ -93,9 +93,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 18dfc0e918053af4bbd88d3b7e2b67c3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 264415b52666cf447984a057b9a02b89, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.264
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -229,18 +229,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114092616148905712
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1982285906256896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433ed203979cf244a94635cfc1c29f68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distantexplosion: {fileID: 8300000, guid: 18dfc0e918053af4bbd88d3b7e2b67c3, type: 3}
 --- !u!114 &114273426037822460
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -252,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8862ea7b10c84421c9485c36f04335a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDestruction: 4
+  timeToDestruction: 1.5
 --- !u!114 &114359885095865366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,6 +289,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthChange: -1
+--- !u!114 &114899837807684718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1982285906256896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561d63d49cc663e439e20427621f964a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1813222161843652, guid: 04b244dd4fd823540a7a8c0de5394a18,
+    type: 2}
 --- !u!212 &212048328372330154
 SpriteRenderer:
   m_ObjectHideFlags: 1
