@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-[AddComponentMenu("")]
+[AddComponentMenu("GUI")]
 public class UIScript : MonoBehaviour
 {
 	[Header("Configuration")]
