@@ -10,18 +10,18 @@ public class ExplodeTile : MonoBehaviour
 {
 
     // This is the player the object is going to move towards
-    public Enums.Players targetPlayer = Enums.Players.Player;
+    private Enums.Players targetPlayer = Enums.Players.Player;
 
-    public const string k_Key = "exploded";
+    private const string k_Key = "exploded";
 
-    public TileBase m_Border;
-    public TileBase m_ExplodedFloor;
-    public GameObject m_Explosion;
-    public GameObject m_Cannonballs;
-    public Transform playerTransform;
-    public Transform CannonballsTransform;
-    public Vector3 CannonballsPosition;
-    public Vector3Int gridPos2;
+    private TileBase m_Border;
+    private TileBase m_ExplodedFloor;
+    private GameObject m_Explosion;
+    private GameObject m_Cannonballs;
+    private Transform playerTransform;
+    private Transform CannonballsTransform;
+    private Vector3 CannonballsPosition;
+    private Vector3Int gridPos2;
 
     private Grid m_Grid;
     private Tilemap m_ForeGround;
@@ -29,12 +29,12 @@ public class ExplodeTile : MonoBehaviour
     private Tilemap m_SoilGround;
     private GridInformation m_Info;
 
-   
-   public bool digKivet = false;
-   public bool buttonPressed = false;
-   // public bool exptrigger = false;
 
-   public Vector3Int gridPos;
+    private bool digKivet = false;
+    private bool buttonPressed = false;
+    // public bool exptrigger = false;
+
+    private Vector3Int gridPos;
   //  Animator animator;
 
    

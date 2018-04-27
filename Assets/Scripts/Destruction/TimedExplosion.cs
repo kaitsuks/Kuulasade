@@ -2,7 +2,7 @@
 using System.Collections;
 
 [AddComponentMenu("Playground/Destruction/Timed Self-Destruct")]
-public class TimedSelfDestruct : MonoBehaviour
+public class TimedExplosion : MonoBehaviour
 {
     
 
@@ -21,7 +21,7 @@ public class TimedSelfDestruct : MonoBehaviour
 	void DestroyMe()
 	{
         gameObject.SendMessage("Explodeit", null);
-        //Debug.Log("Tässä kohtaa on ongelma - terveiset TimedSelfDestruct "  + timeToDestruction);
+        Debug.Log("Tässä kohtaa on ongelma - terveiset TimedSelfDestruct "  + timeToDestruction);
         //gameObject.SendMessage("Playit", null);
         Destroy(gameObject);
 

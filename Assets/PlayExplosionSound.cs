@@ -5,24 +5,24 @@ using UnityEngine.Audio;
 
 public class PlayExplosionSound : MonoBehaviour {
 
-    //public AudioClip audioClip;
-    public AudioClip distantexplosion;
+    public AudioClip audioClip;
+    //public AudioClip distantexplosion;
     AudioSource audioSource;
-    //AudioSource audioSource = .AddComponent<AudioSource>() as AudioSource;
+    //AudioSource audioSource = AddComponent<AudioSource>();
 
     // UnityEngine.
 
     // Use this for initialization
     void Start () {
-        //audioSource = gameObject.GetComponentInParent<AudioSource>();
-        distantexplosion = (AudioClip) Resources.Load("Sounds/distantexplosion");
-
+        audioSource = gameObject.GetComponentInParent<AudioSource>();
+        //audioSource = AddComponent<AudioSource>();
+        audioClip = (AudioClip) Resources.Load("Sounds/front-desk-bells-daniel_simon");
     }
 
     void Awake()
     {
 
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
         //audioSource.
 
     }
@@ -39,7 +39,7 @@ public class PlayExplosionSound : MonoBehaviour {
         Debug.Log("Play Sound called!");
         //audioSource.PlayOneShot(distantexplosion, 1.0f);
         //audioSource.Play();
-        audioSource.PlayOneShot(distantexplosion);
+        //audioSource.PlayOneShot(audioClip);
 
 
     }

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[AddComponentMenu("Playground/Destruction/Timed Self-Destruct")]
-public class TimedSelfDestruct : MonoBehaviour
+[AddComponentMenu("Playground/Destruction/Timed Explosion Sound")]
+public class TimedExplosionSound : MonoBehaviour
 {
     
 
@@ -20,9 +20,9 @@ public class TimedSelfDestruct : MonoBehaviour
 	// This function will destroy this object :(
 	void DestroyMe()
 	{
-        gameObject.SendMessage("Explodeit", null);
-        //Debug.Log("Tässä kohtaa on ongelma - terveiset TimedSelfDestruct "  + timeToDestruction);
-        //gameObject.SendMessage("Playit", null);
+        //gameObject.SendMessage("Explodeit", null);
+        Debug.Log("Kutsuttu DestroyMe - terveiset TimedExplosionSound "  + timeToDestruction);
+        gameObject.SendMessage("Playit", null);
         Destroy(gameObject);
 
 		// Bye bye!

@@ -90,7 +90,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1982285906256896}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 264415b52666cf447984a057b9a02b89, type: 3}
@@ -252,18 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1bd064368198564ba4b6b6e02704e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetPlayer: 0
-  m_Border: {fileID: 0}
-  m_ExplodedFloor: {fileID: 0}
-  m_Explosion: {fileID: 0}
-  m_Cannonballs: {fileID: 0}
-  playerTransform: {fileID: 0}
-  CannonballsTransform: {fileID: 0}
-  CannonballsPosition: {x: 0, y: 0, z: 0}
-  gridPos2: {x: 0, y: 0, z: 0}
-  digKivet: 0
-  buttonPressed: 0
-  gridPos: {x: 0, y: 0, z: 0}
 --- !u!114 &114760433120062206
 MonoBehaviour:
   m_ObjectHideFlags: 1
