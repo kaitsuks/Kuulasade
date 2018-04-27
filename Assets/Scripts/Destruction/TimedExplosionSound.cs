@@ -23,7 +23,7 @@ public class TimedExplosionSound : MonoBehaviour
         //gameObject.SendMessage("Explodeit", null);
         Debug.Log("Kutsuttu DestroyMe - terveiset TimedExplosionSound "  + timeToDestruction);
         gameObject.SendMessage("Playit", null);
-        Destroy(gameObject);
+        Destroy(gameObject, 4.0f);
 
 		// Bye bye!
 	}

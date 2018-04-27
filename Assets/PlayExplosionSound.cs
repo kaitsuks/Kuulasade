@@ -39,7 +39,7 @@ public class PlayExplosionSound : MonoBehaviour {
         Debug.Log("Play Sound called!");
         //audioSource.PlayOneShot(distantexplosion, 1.0f);
         //audioSource.Play();
-        //audioSource.PlayOneShot(audioClip);
+        audioSource.PlayOneShot(audioClip, 1.0f);
 
 
     }
